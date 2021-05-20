@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title> My Family Book.</title>
+    </head>
+    <body>
+        
+  
+    
+    <center>
+        <h1>My Family Book</h1>
+
+
+    <img src="https://static9.depositphotos.com/1497380/1190/v/950/depositphotos_11907565-stock-illustration-happy-family.jpg" style ="width: 500;"
+    id="family_member_img"></img>
+
+    <h4 id="family_member">Family Book</h4>
+
+
+<button onclick="update()">Next</button>
+<script>
+    
+    var images = 
+    [
+   "https://icon2.cleanpng.com/20180330/lhe/kisspng-grandparent-grandfather-grandpa-grandpa-clip-art-grandpa-5abe0ee366c1d0.1306632915224050914209.jpg",
+  "https://www.clipartmax.com/png/middle/307-3078881_grandmother-free-icon-grandmother-png.png",
+    "https://www.kindpng.com/picc/m/164-1646696_father-and-son-png-transparent-png.png",
+    "https://freepngimg.com/thumb/mothers_day/36359-8-mother-transparent-picture.png",
+    ];
+
+
+    var names = ["Om Prakash Garg",
+    "Lalita Garg",
+    "Pankaj Garg",
+    "Ruchi Garg"];
+
+    
+
+    var i = 0;
+    function update() {
+
+i++;
+var numbers_of_family_member_in_a_array = 5
+if(i > numbers_of_family_member_in_a_array )
+{ 
+    i = 0;}
+    
+    var updatedImage = images[i]
+    var updatedName = names[i]
+    document.getElementById("family_member_img").src = updatedImage;
+    document.getElementById("family_member").src = updatedName;
+}
+    
+    </script>
+    </center>
+    </body>
+</html>
